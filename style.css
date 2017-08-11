@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 body {
   cursor: auto;
   font-family: "Noto Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
@@ -11,6 +21,18 @@ body {
 /* Header container unique uncommon goods logo */
 header {
   text-align: center;
+}
+
+#view-in-browser {
+  float: right;
+  color: rgb(44,106,138);
+  font-size: .3em;
+}
+
+#take-a-look {
+  float: left;
+  font-size: .3em;
+
 }
 
 #company-logo {
@@ -65,7 +87,7 @@ h1 {
 
 /* Styling for reminder text */
 #reminder-text{
-  width: 50%;
+  width: 45%;
   margin-left: 25%;
   color: #817B73;
   font-size: .9em;
@@ -177,4 +199,11 @@ button:active {
   height: 9px;
   width: 11px;
   margin-left: 15px;
+}
+
+.footer-container {
+  width: 80%;
+  margin-left: 10%;
+  padding: 17px 0px 0px 17px;
+  font-size: .7em;
 }
