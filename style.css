@@ -4,30 +4,123 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
-
 }
 
+/* Header container unique uncommon goods logo */
 header {
   text-align: center;
 }
 
+/* flex container for nav bar element positioning */
 .nav-flex{
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
   padding-top: 5px;
   padding-bottom: 5px;
   width: 50%;
   margin-left: 25%;
 }
-
+/* list of main nav bar links */
 li {
   list-style: none;
 }
-
+/* removes bullets and adds color to link text */
 a:link {
   text-decoration: none;
   color: #817B73;
+}
+
+/* main container for tagline, button, and reminder to purchase */
+.main-content-container {
+  width: 44.3%;
+  padding: 35px;
+  margin-left: 25%;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 350px;
+  background-color: rgb(245,245,242)
+
+
+}
+/* Access font file .otf */
+@font-face {
+    font-family: 'Prumo Banner Light';
+    src: url("font/Prumo Banner Light.otf") format("opentype");
+}
+
+h1 {
+  color: rgb(44,106,138);
+  font-family: 'Prumo Banner Light';
+  font-size: 3.2em;
+}
+
+/* Styling for reminder text */
+#reminder-text{
+  width: 50%;
+  margin-left: 25%;
+  color: #817B73;
+  font-size: .9em;
+}
+/* make last few words starting with "before" black and bold */
+#reminder-black{
+  font-weight: bold;
+  color: black;
+}
+/* flex container for reminder */
+.reminder-text-flex{
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+/* THE BUTTON! */
+button{
+  background-color: rgb(44,106,138);
+  border: rgb(44,106,138);
+  border-radius: 2px;
+  width: 45%;
+  padding: 8px;
+  margin-top: 28px;
+  font-size: 1.2em;
+  font-family: cursive;
+  color: white;
+}
+
+.three-blocks-flex{
+  /*border: 1px solid red;*/
+  width: 50%;
+  margin-left: 25%;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+
+}
+
+.block-1 {
+  width: 30%;
+  height: 180px;
+  background-image: url('images/image1.png');
+  background-size: cover;
+}
+
+.block-2 {
+  width: 30%;
+  height: 180px;
+  background-image: url('images/image2.png');
+  background-size: cover;
+}
+
+
+.block-3 {
+  width: 30%;
+  height: 180px;
+  background-image: url('images/image3.png');
+  background-size: cover;
+
 }
