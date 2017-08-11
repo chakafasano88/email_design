@@ -4,6 +4,8 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* Header container unique uncommon goods logo */
@@ -12,16 +14,16 @@ header {
 }
 
 /* flex container for nav bar element positioning */
-.nav-flex{
+.top-nav-flex{
   display: flex;
   justify-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 1px solid gray;
   border-top: 1px solid gray;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 50%;
-  margin-left: 25%;
+  width: 80%;
+  margin-left: 10%;
 }
 /* list of main nav bar links */
 li {
@@ -35,9 +37,9 @@ a:link {
 
 /* main container for tagline, button, and reminder to purchase */
 .main-content-container {
-  width: 44.3%;
+  width: 73.2%;
   padding: 35px;
-  margin-left: 25%;
+  margin-left: 10%;
   margin-bottom: 10px;
   text-align: center;
   height: 350px;
@@ -89,9 +91,8 @@ button{
 }
 
 .three-blocks-flex{
-  /*border: 1px solid red;*/
-  width: 50%;
-  margin-left: 25%;
+  width: 80%;
+  margin-left: 10%;
   height: 190px;
   display: flex;
   justify-content: center;
@@ -122,5 +123,45 @@ button{
   height: 180px;
   background-image: url('images/image3.png');
   background-size: cover;
+}
 
+.bottom-nav-container {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid gray;
+}
+
+.bottom-nav-flex {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 60%;
+  font-size: .8em;
+}
+
+.icon-flex {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  margin-left: 10%;
+}
+
+.fa {
+  border-radius: 20px;
+  background-color: rgb(44,106,138);
+  border: rgb(44,106,138);
+  color: white;
+  border-radius: 25px;
+  padding: 8px 17px 21px 11px;
+  height: 9px;
+  width: 11px;
+  margin-left: 15px;
 }
