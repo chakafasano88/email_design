@@ -13,6 +13,10 @@ header {
   text-align: center;
 }
 
+#company-logo {
+  width: 20%;
+}
+
 /* flex container for nav bar element positioning */
 .top-nav-flex{
   display: flex;
@@ -88,6 +92,15 @@ button{
   font-size: 1.2em;
   font-family: cursive;
   color: white;
+}
+
+button:focus {
+  outline:none;
+}
+
+button:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
 }
 
 .three-blocks-flex{
