@@ -8,22 +8,27 @@
     <script src="https://use.fontawesome.com/2a31d5a3fd.js"></script>
   </head>
   <body>
-    <div class="all-elements-flex">
-      <header>
-        <div class="container">
-          <p id="take-a-look">Take a look inside</p>
-          <a id="view-in-browser" href="#">View in Browser</a>
+      <div class="header">
+        <div class="flex-container-parent">
+          <div class="flex-child1">
+            <p id="take-a-look">Take a look inside</p>
+          </div>
+          <div class="flex-child2" >
+            <a id="view-in-browser" href="#">View in Browser</a>
+          </div>
         </div>
-        <img id="company-logo" src="images/uncommon_goods.jpg" alt="">
-      </header>
+        <div class="image-container">
+          <img id="company-logo" src="images/uncommon_goods.jpg" alt="">
+        </div>
+      </div>
       <div class="top-nav-flex">
-          <li><a href="#">home</a></li>|
-          <li><a href="#">kitchen & bar</a></li>|
-          <li><a href="#">jewlery</a></li>|
-          <li><a href="#">women</a></li>|
-          <li><a href="#">men</a></li>|
-          <li><a href="#">this just in</a></li>|
-          <li><a href="#">sale</a></li>
+        <li><a href="#">home</a></li>|
+        <li><a href="#">kitchen & bar</a></li>|
+        <li><a href="#">jewlery</a></li>|
+        <li><a href="#">women</a></li>|
+        <li><a href="#">men</a></li>|
+        <li><a href="#">this just in</a></li>|
+        <li><a href="#">sale</a></li>
       </div>
       <div class="main-content-container">
         <div class="text-container">
@@ -43,6 +48,22 @@
           <!-- Image set in CSS -->
         </div>
       </div>
+      <!-- Mobile nav flex. Is hidden until re-sized -->
+      <!-- <div class="mobile-top-nav-flex">
+        <li><a href="#">home</a></li>
+        <div class="underline"></div>
+        <li><a href="#">kitchen & bar</a></li>
+        <div class="underline"></div>
+        <li><a href="#">jewlery</a></li>
+        <div class="underline"></div>
+        <li><a href="#">women</a></li>
+        <div class="underline"></div>
+        <li><a href="#">men</a></li>
+        <div class="underline"></div>
+        <li><a href="#">this just in</a></li>
+        <div class="underline"></div>
+        <li><a href="#">sale</a></li>
+      </div> -->
       <div class="bottom-nav-container">
         <div class="bottom-nav-flex">
           <li><a href="#">contact us</a></li>|
@@ -70,7 +91,6 @@
         <br>
         <p>2014 UncommonGoods L.L.C 140 58th street, Building B Suite 5AB, Brooklyn, New York, 11220</p>
       </div>
-    </div>
 
   </body>
 </html>

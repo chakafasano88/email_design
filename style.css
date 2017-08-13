@@ -19,40 +19,49 @@ body {
 }
 
 /* Header container unique uncommon goods logo */
-header {
+.header {
   text-align: center;
   border: 1px solid red;
   width: 80%;
   margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-parent {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-child1 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-child2 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #view-in-browser {
   color: rgb(44,106,138);
   font-size: .3em;
-  position: relative;
-  left: 80px;
 }
 
 #take-a-look {
   font-size: .3em;
-  position: relative;
-  right: 80px;
 }
 
 #company-logo {
   width: 20%;
 }
 
-.container {
-  width: 80%;
-  margin-left: 10%;
-  display: flex;
-  justify-content: flex-end;
-  justify-content: space-between;
-}
 
 /* flex container for nav bar element positioning */
 .top-nav-flex{
+  border: 1px solid purple;
   display: flex;
   justify-content: center;
   justify-content: space-around;
@@ -62,6 +71,10 @@ header {
   padding-bottom: 5px;
   width: 80%;
   margin-left: 10%;
+}
+/* Nav bar for mobile */
+.mobile-top-nav-flex {
+  display: none;
 }
 /* list of main nav bar links */
 li {
@@ -75,6 +88,7 @@ a:link {
 
 /* main container for tagline, button, and reminder to purchase */
 .main-content-container {
+  border: 1px solid red;
   width: 73.2%;
   padding: 35px;
   margin-left: 10%;
@@ -142,7 +156,9 @@ button:active {
   transform: translateY(1px);
 }
 
+/* Image blocks flex container */
 .three-blocks-flex{
+  border: 1px solid red;
   width: 80%;
   margin-left: 10%;
   height: 190px;
@@ -152,7 +168,6 @@ button:active {
   padding-top: 10px;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
-
 }
 
 .block-1 {
@@ -178,6 +193,7 @@ button:active {
 }
 
 .bottom-nav-container {
+  border: 1px solid red;
   margin-left: 10%;
   width: 80%;
   display: flex;
@@ -193,6 +209,8 @@ button:active {
   padding-bottom: 20px;
   width: 60%;
   font-size: .8em;
+  margin-left: 5%;
+
 }
 
 .icon-flex {
@@ -203,7 +221,7 @@ button:active {
   align-items: center;
   font-size: 20px;
   color: white;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .fa {
@@ -219,18 +237,203 @@ button:active {
 }
 
 .footer-container {
-  width: 80%;
+  border: 1px solid red;
+  width: 78.3%;
   margin-left: 10%;
   padding: 17px 0px 0px 17px;
   font-size: .7em;
 }
 
-@media only screen and (max-width : 480px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: red;
+/*@media only screen and (max-width : 480px) {
+
+  .header {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+
   }
 
-}
+  .flex-container-parent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+
+  .flex-child1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+
+  }
+
+  .flex-child2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #company-logo {
+    width: 60%;
+  }
+
+  .main-content-container {
+    width: 58.2%;
+    height: 100px;
+  }
+
+  .text-container {
+    position: relative;
+    top: 0px;
+  }
+
+  .top-nav-flex {
+    display: none;
+  }
+
+
+  h1 {
+    color: rgb(44,106,138);
+    font-family: 'Prumo Banner Light';
+    font-size: 1.2em;
+  }
+
+  /* Styling for reminder text */
+  /*#reminder-text{
+    width: 80%;
+    margin-left: 10%;
+    color: #817B73;
+    font-size: .3em;
+  }*/
+  /* make last few words starting with "before" black and bold */
+  /*#reminder-black{
+    font-weight: bold;
+    color: black;
+  }*/
+  /* flex container for reminder */
+  /*.reminder-text-flex{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+  }*/
+  /* THE BUTTON! */
+  /*button{
+    background-color: rgb(44,106,138);
+    border: rgb(44,106,138);
+    border-radius: 2px;
+    width: 70%;
+    padding: 5px;
+    margin-top: 28px;
+    font-size: .8em;
+    font-family: cursive;
+    color: white;
+  }
+
+  button:focus {
+    outline:none;
+  }
+
+  button:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+  }
+
+  .mobile-top-nav-flex {
+    border: 1px solid purple;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 80%;
+    margin-left: 10%;
+
+  }*/
+
+  /*.underline {
+    border-bottom: .7px solid rgb(217,217,217);
+    width: 90%;
+    padding: 5px 5px 5px 6px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #817B73;
+  }
+
+  .three-blocks-flex{
+    border: 1px solid red;
+    width: 80%;
+    margin-left: 10%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+
+  .block-1 {
+    width: 80%;
+    height: 200px;
+    background-image: url('images/image1.png');
+    background-size: cover ;
+    margin-bottom: 5%;
+  }
+
+  .block-2 {
+    width: 80%;
+    height: 200px;
+    background-image: url('images/image2.png');
+    background-size: cover;
+    margin-bottom: 5%;
+
+  }
+
+
+  .block-3 {
+    width: 80%;
+    height: 200px;
+    background-image: url('images/image3.png');
+    background-size: cover;
+  }
+
+  .bottom-nav-container {
+    border: 1px solid red;
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+  }
+
+  .bottom-nav-flex {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 60%;
+    font-size: .8em;
+  }
+
+
+  .icon-flex {
+    border: 1px solid red;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    margin-right: 10%;
+  }
+}*/
