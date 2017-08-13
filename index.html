@@ -8,6 +8,7 @@
     <script src="https://use.fontawesome.com/2a31d5a3fd.js"></script>
   </head>
   <body>
+    <div class="all-content-container">
       <div class="header">
         <div class="flex-container-parent">
           <div class="flex-child1">
@@ -49,7 +50,7 @@
         </div>
       </div>
       <!-- Mobile nav flex. Is hidden until re-sized -->
-      <!-- <div class="mobile-top-nav-flex">
+      <div class="mobile-top-nav-flex">
         <li><a href="#">home</a></li>
         <div class="underline"></div>
         <li><a href="#">kitchen & bar</a></li>
@@ -63,14 +64,23 @@
         <li><a href="#">this just in</a></li>
         <div class="underline"></div>
         <li><a href="#">sale</a></li>
-      </div> -->
+      </div>
       <div class="bottom-nav-container">
         <div class="bottom-nav-flex">
-          <li><a href="#">contact us</a></li>|
-          <li><a href="#">about us</a></li>|
-          <li><a href="#">request a catalog</a></li>|
-          <li><a href="#">corporate gifts & bulk orders</a></li>|
-          <li><a href="#">blog</a></li>
+          <li id="hide-links"><a href="#">contact us</a></li>
+          <li id="hide-links"><a href="#">about us</a></li>
+          <li id="hide-links"><a href="#">request a catalog</a></li>
+          <li id="hide-links"><a href="#">corporate gifts & bulk orders</a></li>
+          <li id="hide-links"><a href="#">blog</a></li>
+          <div class="show-hide-bottom-links-container1">
+            <li id="show-links"><a href="#">contact us</a></li>|
+            <li id="show-links"><a href="#">about us</a></li>|
+            <li id="show-links"><a href="#">request a catalog</a></li>
+          </div>
+          <div class="show-hide-bottom-links-container2">
+            <li id="show-links"><a href="#">corporate gifts & bulk orders</a></li>|
+            <li id="show-links"><a href="#">blog</a></li>
+          </div>
         </div>
         <div class="icon-flex">
           <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -89,8 +99,8 @@
         <p> Please email us with comments at <a href="#">feedback@uncommongoods.com</a>
         <br>
         <br>
-        <p>2014 UncommonGoods L.L.C 140 58th street, Building B Suite 5AB, Brooklyn, New York, 11220</p>
+        <p>&copy 2014 UncommonGoods&#8482 L.L.C 140 58th street, Building B Suite 5AB, Brooklyn, New York, 11220</p>
       </div>
-
+    </div>
   </body>
 </html>
